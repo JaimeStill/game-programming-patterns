@@ -33,6 +33,7 @@
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@types/node": "^13.9.2",
     "material-icons": "^0.3.1",
+    "minimist": "^1.2.5",
     "roboto-fontface": "^0.10.0",
     "ts-node": "^8.7.0",
     "tslint": "^6.1.0",
