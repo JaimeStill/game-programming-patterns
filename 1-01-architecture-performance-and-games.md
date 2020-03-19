@@ -1,4 +1,5 @@
 # Architecture, Performance, and Games
+[Contents](./readme.md#contents)
 
 ## What is Software Architecture?
 
