@@ -1,0 +1,135 @@
+<mat-toolbar>Actor Commands</mat-toolbar>
+<section fxLayout="column"
+         fxLayoutAlign="start stretch"
+         class="container">
+  <p class="mat-subheading-2">Key Mapping</p>
+  <section fxLayout="row | wrap"
+           fxLayoutAlign="space-evenly center">
+    <section fxLayout="column"
+             fxLayoutAlign="start stretch">
+      <p class="mat-title">B - {{bCommand.label}}</p>
+      <mat-form-field>
+        <mat-label>B Command</mat-label>
+        <mat-select [value]="bCommand"
+                    [compareWith]="compareActorCommands"
+                    (selectionChange)="setActorCommand($event, 'b')">
+          <mat-option *ngFor="let c of actorCommands"
+                      [value]="c">{{c.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+    <section fxLayout="column"
+             fxLayoutAlign="start stretch">
+      <p class="mat-title">A - {{aCommand.label}}</p>
+      <mat-form-field>
+        <mat-label>A Command</mat-label>
+        <mat-select [value]="aCommand"
+                    [compareWith]="compareActorCommands"
+                    (selectionChange)="setActorCommand($event, 'a')">
+          <mat-option *ngFor="let c of actorCommands"
+                      [value]="c">{{c.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+    <section fxLayout="column"
+             fxLayoutAlign="start stretch">
+      <p class="mat-title">X - {{xCommand.label}}</p>
+      <mat-form-field>
+        <mat-label>X Command</mat-label>
+        <mat-select [value]="xCommand"
+                    [compareWith]="compareActorCommands"
+                    (selectionChange)="setActorCommand($event, 'x')">
+          <mat-option *ngFor="let c of actorCommands"
+                      [value]="c">{{c.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+    <section fxLayout="column"
+             fxLayoutAlign="start stretch">
+      <p class="mat-title">Y - {{yCommand.label}}</p>
+      <mat-form-field>
+        <mat-label>Y Command</mat-label>
+        <mat-select [value]="yCommand"
+                    [compareWith]="compareActorCommands"
+                    (selectionChange)="setActorCommand($event, 'y')">
+          <mat-option *ngFor="let c of actorCommands"
+                      [value]="c">{{c.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+  </section>
+  <section fxLayout="row | wrap"
+           fxLayoutAlign="start stretch">
+    <section class="background card container"
+             fxFlex>
+      <p><span class="mat-body-strong">Name:</span> {{actorOne.name}}</p>
+      <p><span class="mat-body-strong">Strength:</span> {{actorOne.strength}}</p>
+      <p class="mat-body-strong">Equipped</p>
+      <p><code class="snippet">{{actorOne.equipped | json}}</code></p>
+      <p class="mat-body-strong">Inventory</p>
+      <p *ngFor="let w of actorOne.inventory"><code class="snippet">{{w | json}}</code></p>
+    </section>
+    <section class="background card container"
+             fxFlex>
+      <p><span class="mat-body-strong">Name:</span> {{actorTwo.name}}</p>
+      <p><span class="mat-body-strong">Strength:</span> {{actorTwo.strength}}</p>
+      <p class="mat-body-strong">Equipped</p>
+      <p><code class="snippet">{{actorTwo.equipped | json}}</code></p>
+      <p class="mat-body-strong">Inventory</p>
+      <p *ngFor="let w of actorTwo.inventory"><code class="snippet">{{w | json}}</code></p>
+    </section>
+  </section>
+  <section fxLayout="row | wrap"
+           fxLayoutAlign="start stretch">
+    <section fxLayout="column"
+             fxLayoutAlign="start stretch"
+             fxFlex>
+      <mat-toolbar>Player One</mat-toolbar>
+      <section fxLayout="row | wrap"
+               fxLayoutAlign="space-evenly center"
+               class="container">
+        <button mat-stroked-button
+                (click)="execute(bCommand, actorOne, oneActions)">B</button>
+        <button mat-stroked-button
+                (click)="execute(aCommand, actorOne, oneActions)">A</button>
+        <button mat-stroked-button
+                (click)="execute(xCommand, actorOne, oneActions)">X</button>
+        <button mat-stroked-button
+                (click)="execute(yCommand, actorOne, oneActions)">Y</button>
+      </section>
+    </section>
+    <section fxLayout="column"
+             fxLayoutAlign="start stretch"
+             fxFlex>
+      <mat-toolbar>Player Two</mat-toolbar>
+      <section fxLayout="row | wrap"
+               fxLayoutAlign="space-evenly center"
+               class="container">
+        <button mat-stroked-button
+                (click)="execute(bCommand, actorTwo, twoActions)">B</button>
+        <button mat-stroked-button
+                (click)="execute(aCommand, actorTwo, twoActions)">A</button>
+        <button mat-stroked-button
+                (click)="execute(xCommand, actorTwo, twoActions)">X</button>
+        <button mat-stroked-button
+                (click)="execute(yCommand, actorTwo, twoActions)">Y</button>
+      </section>
+    </section>
+  </section>
+  <section fxLayout="row | wrap"
+           fxLayoutAlign="start stretch"
+           class="container">
+    <section class="background card"
+             fxFlex>
+      <p *ngFor="let action of oneActions">
+        <code class="snippet alt">{{action}}</code>
+      </p>
+    </section>
+    <section class="background card"
+             fxFlex>
+      <p *ngFor="let action of twoActions">
+        <code class="snippet alt">{{action}}</code>
+      </p>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,29 @@
+<mat-toolbar>Configure Button Action</mat-toolbar>
+<section fxLayout="column"
+         fxLayoutAlign="start stretch"
+         class="container">
+  <section fxLayout="row"
+           fxLayoutAlign="start center">
+    <mat-form-field fxFlex="33">
+      <mat-label>Command Setting</mat-label>
+      <mat-select [value]="command"
+                  [compareWith]="compareCommands"
+                  (selectionChange)="setCommand($event)">
+        <mat-option *ngFor="let c of commands"
+                    [value]="c">{{c.label}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field fxFlex="66">
+      <mat-label>Input Value</mat-label>
+      <input matInput
+             #val
+             (keydown.enter)="command.execute(val.value)" />
+    </mat-form-field>
+  </section>
+  <p><span class="mat-body-strong">Current Command:</span> {{command.label}}</p>
+  <p>{{command.description}}</p>
+</section>
+<button mat-stroked-button
+        color="primary"
+        [style.margin.px]="8"
+        (click)="command.execute(val.value)">Execute</button>
