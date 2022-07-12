@@ -5,7 +5,8 @@ name: Deploy Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+    - main
   paths-ignore:
     - .angular
     - node_modules
