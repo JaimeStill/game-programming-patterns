@@ -1,0 +1,29 @@
+<section fxLayout="column"
+         fxLayoutAlign="start stretch"
+         class="p8">
+    <pattern-header link="https://gameprogrammingpatterns.com/command.html"
+                    header="Command Pattern"></pattern-header>
+    <mat-form-field class="m8"
+                    fxFlexAlign="start">
+        <mat-label>Command</mat-label>
+        <mat-select [value]="command"
+                    [compareWith]="compare"
+                    (selectionChange)="setCommand($event.value)">
+            <mat-option *ngFor="let c of commands"
+                        [value]="c">{{c.name}}</mat-option>
+        </mat-select>
+        <mat-hint>{{command.description}}</mat-hint>
+    </mat-form-field>
+    <mat-form-field class="m8">
+        <mat-label>Value</mat-label>
+        <input matInput
+               #val
+               (keydown.enter)="command.execute(val.value)" />
+        <mat-hint>Press Enter or click <em>Execute</em> below</mat-hint>
+    </mat-form-field>
+    <button mat-stroked-button
+            color="primary"
+            class="m8"
+            fxFlexAlign="start"
+            (click)="command.execute(val.value)">Execute</button>
+</section>

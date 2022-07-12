@@ -1,0 +1,5 @@
+<button mat-icon-button
+        [ngClass]="themer.isLight ? lightColor : darkColor"
+        (click)="themer.toggleTheme()">
+    <mat-icon>{{themer.isLight ? lightIcon : darkIcon}}</mat-icon>
+</button>
