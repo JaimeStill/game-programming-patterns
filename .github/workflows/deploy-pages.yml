@@ -37,7 +37,6 @@ jobs:
     - name: Build Deployed App
       run: |
         npm install
-        npm run build-core
         npm run deploy
     - name: Commit to Repo
       run: |
