@@ -31,12 +31,15 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services__WEBPACK_IMPORTED_MODULE_0__.ThemeService)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 6, vars: 1, consts: [[1, "mat-typography", "mat-app-background", "app-frame", 3, "ngClass"], ["mat-menu-item", "", "routerLink", "command"], [1, "app-container"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 8, vars: 1, consts: [[1, "mat-typography", "mat-app-background", "app-frame", 3, "ngClass"], ["mat-menu-item", "", "routerLink", "command"], ["mat-menu-item", "", "routerLink", "flyweight"], [1, "app-container"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "section", 0)(1, "app-bar")(2, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, "Command");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, "Flyweight");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "section", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](5, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "section", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](7, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", ctx.themer.isLight ? "app-light" : "app-dark");
@@ -55,14 +58,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 318);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3598);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 587);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 2816);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser */ 318);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3598);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/forms */ 587);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/router */ 2816);
 /* harmony import */ var _material_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./material.module */ 8518);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5005);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes */ 6018);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _components_core_app_bar_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/core/app-bar.component */ 3270);
 /* harmony import */ var _components_core_pattern_header_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/core/pattern-header.component */ 9137);
 /* harmony import */ var _components_core_pattern_link_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/core/pattern-link.component */ 403);
@@ -70,6 +73,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dialogs_confirm_confirm_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dialogs/confirm/confirm.dialog */ 2418);
 /* harmony import */ var _routes_home_home_route__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./routes/home/home.route */ 7027);
 /* harmony import */ var _routes_command_command_route__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./routes/command/command.route */ 2282);
+/* harmony import */ var _routes_flyweight_flyweight_route__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./routes/flyweight/flyweight.route */ 1772);
+
 
 
 
@@ -89,16 +94,16 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({ imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule,
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule,
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({ imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__.BrowserModule,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__.BrowserAnimationsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule,
         _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule,
-        _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule.forRoot(_routes__WEBPACK_IMPORTED_MODULE_2__.Routes)] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_core_app_bar_component__WEBPACK_IMPORTED_MODULE_3__.AppBarComponent, _components_core_pattern_header_component__WEBPACK_IMPORTED_MODULE_4__.PatternHeaderComponent, _components_core_pattern_link_component__WEBPACK_IMPORTED_MODULE_5__.PatternLinkComponent, _components_core_theme_toggle_component__WEBPACK_IMPORTED_MODULE_6__.ThemeToggleComponent, _dialogs_confirm_confirm_dialog__WEBPACK_IMPORTED_MODULE_7__.ConfirmDialog, _routes_home_home_route__WEBPACK_IMPORTED_MODULE_8__.HomeRoute, _routes_command_command_route__WEBPACK_IMPORTED_MODULE_9__.CommandRoute], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule,
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule,
-        _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule] }); })();
+        _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule.forRoot(_routes__WEBPACK_IMPORTED_MODULE_2__.Routes)] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_core_app_bar_component__WEBPACK_IMPORTED_MODULE_3__.AppBarComponent, _components_core_pattern_header_component__WEBPACK_IMPORTED_MODULE_4__.PatternHeaderComponent, _components_core_pattern_link_component__WEBPACK_IMPORTED_MODULE_5__.PatternLinkComponent, _components_core_theme_toggle_component__WEBPACK_IMPORTED_MODULE_6__.ThemeToggleComponent, _dialogs_confirm_confirm_dialog__WEBPACK_IMPORTED_MODULE_7__.ConfirmDialog, _routes_home_home_route__WEBPACK_IMPORTED_MODULE_8__.HomeRoute, _routes_command_command_route__WEBPACK_IMPORTED_MODULE_9__.CommandRoute, _routes_flyweight_flyweight_route__WEBPACK_IMPORTED_MODULE_10__.FlyweightRoute], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__.BrowserModule,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__.BrowserAnimationsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule,
+        _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule, _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule] }); })();
 
 
 /***/ }),
@@ -573,6 +578,96 @@ class SnackerCommand {
 
 /***/ }),
 
+/***/ 194:
+/*!****************************************************!*\
+  !*** ./src/patterns/app/models/flyweight/index.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Terrain": () => (/* reexport safe */ _terrain__WEBPACK_IMPORTED_MODULE_0__.Terrain),
+/* harmony export */   "TerrainBuilder": () => (/* reexport safe */ _terrain_builder__WEBPACK_IMPORTED_MODULE_1__.TerrainBuilder)
+/* harmony export */ });
+/* harmony import */ var _terrain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./terrain */ 8811);
+/* harmony import */ var _terrain_builder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./terrain-builder */ 864);
+
+
+
+
+/***/ }),
+
+/***/ 864:
+/*!**************************************************************!*\
+  !*** ./src/patterns/app/models/flyweight/terrain-builder.ts ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TerrainBuilder": () => (/* binding */ TerrainBuilder)
+/* harmony export */ });
+/* harmony import */ var _terrain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./terrain */ 8811);
+
+class TerrainBuilder {
+    constructor(width, height, blockSize) {
+        this.terrain = new Array();
+        this.seedTile = () => {
+            const seed = Math.floor(Math.random() * 3);
+            switch (seed) {
+                case 2:
+                    return this.water;
+                case 1:
+                    return this.hill;
+                default:
+                    return this.grass;
+            }
+        };
+        this.generate = () => {
+            for (let x = 0; x < this.width; x++) {
+                const column = new Array();
+                for (let y = 0; y < this.height; y++) {
+                    column[y] = this.seedTile();
+                }
+                this.terrain.push(column);
+            }
+        };
+        this.getTile = (x, y) => this.terrain[x][y];
+        this.width = width;
+        this.height = height;
+        this.blockSize = blockSize;
+        this.grass = new _terrain__WEBPACK_IMPORTED_MODULE_0__.Terrain(1, false, '#00bc50', blockSize);
+        this.hill = new _terrain__WEBPACK_IMPORTED_MODULE_0__.Terrain(3, false, '#704906', blockSize);
+        this.water = new _terrain__WEBPACK_IMPORTED_MODULE_0__.Terrain(2, true, '#0ac9c9', blockSize);
+        this.generate();
+    }
+}
+
+
+/***/ }),
+
+/***/ 8811:
+/*!******************************************************!*\
+  !*** ./src/patterns/app/models/flyweight/terrain.ts ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Terrain": () => (/* binding */ Terrain)
+/* harmony export */ });
+class Terrain {
+    constructor(movement, isWater, texture, size) {
+        this.movement = movement;
+        this.isWater = isWater;
+        this.texture = texture;
+        this.size = size;
+    }
+}
+
+
+/***/ }),
+
 /***/ 5531:
 /*!******************************************!*\
   !*** ./src/patterns/app/models/index.ts ***!
@@ -583,9 +678,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AlertCommand": () => (/* reexport safe */ _command__WEBPACK_IMPORTED_MODULE_0__.AlertCommand),
 /* harmony export */   "LogCommand": () => (/* reexport safe */ _command__WEBPACK_IMPORTED_MODULE_0__.LogCommand),
-/* harmony export */   "SnackerCommand": () => (/* reexport safe */ _command__WEBPACK_IMPORTED_MODULE_0__.SnackerCommand)
+/* harmony export */   "SnackerCommand": () => (/* reexport safe */ _command__WEBPACK_IMPORTED_MODULE_0__.SnackerCommand),
+/* harmony export */   "Terrain": () => (/* reexport safe */ _flyweight__WEBPACK_IMPORTED_MODULE_1__.Terrain),
+/* harmony export */   "TerrainBuilder": () => (/* reexport safe */ _flyweight__WEBPACK_IMPORTED_MODULE_1__.TerrainBuilder)
 /* harmony export */ });
 /* harmony import */ var _command__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./command */ 9590);
+/* harmony import */ var _flyweight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./flyweight */ 194);
+
 
 
 
@@ -709,6 +808,95 @@ const CommandRoutes = [
 
 /***/ }),
 
+/***/ 1772:
+/*!**************************************************************!*\
+  !*** ./src/patterns/app/routes/flyweight/flyweight.route.ts ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FlyweightRoute": () => (/* binding */ FlyweightRoute)
+/* harmony export */ });
+/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../models */ 5531);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 6362);
+/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/flex-layout/flex */ 5434);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/button */ 7317);
+/* harmony import */ var _components_core_pattern_header_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/core/pattern-header.component */ 9137);
+
+
+
+
+
+
+function FlyweightRoute_section_3_section_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "section", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const tile_r3 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("background-color", tile_r3.texture)("width", tile_r3.size, "px")("height", tile_r3.size, "px");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", tile_r3.movement, " ");
+} }
+function FlyweightRoute_section_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "section", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, FlyweightRoute_section_3_section_1_Template, 2, 7, "section", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const column_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", column_r1);
+} }
+class FlyweightRoute {
+    constructor() {
+        this.builder = new _models__WEBPACK_IMPORTED_MODULE_0__.TerrainBuilder(20, 16, 20);
+        this.refresh = () => this.builder = new _models__WEBPACK_IMPORTED_MODULE_0__.TerrainBuilder(20, 16, 20);
+    }
+}
+FlyweightRoute.ɵfac = function FlyweightRoute_Factory(t) { return new (t || FlyweightRoute)(); };
+FlyweightRoute.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: FlyweightRoute, selectors: [["flyweight-route"]], decls: 7, vars: 1, consts: [["fxLayout", "column", "fxLayoutAlign", "start stretch", 1, "p8"], ["link", "https://gameprogrammingpatterns.com/flyweight.html", "header", "Flyweight Pattern"], ["fxLayout", "row", "fxLayoutAlign", "start start", 1, "m8"], ["fxLayout", "column", "fxLayoutAlign", "start start", 4, "ngFor", "ngForOf"], [1, "p8"], ["mat-stroked-button", "", "color", "primary", 3, "click"], ["fxLayout", "column", "fxLayoutAlign", "start start"], ["fxLayout", "column", "fxLayoutAlign", "center center", 3, "background-color", "width", "height", 4, "ngFor", "ngForOf"], ["fxLayout", "column", "fxLayoutAlign", "center center"]], template: function FlyweightRoute_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "section", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "pattern-header", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "section", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, FlyweightRoute_section_3_Template, 2, 1, "section", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "section", 4)(5, "button", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function FlyweightRoute_Template_button_click_5_listener() { return ctx.refresh(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, " Refresh ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.builder.terrain);
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__.DefaultLayoutDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__.DefaultLayoutAlignDirective, _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatButton, _components_core_pattern_header_component__WEBPACK_IMPORTED_MODULE_1__.PatternHeaderComponent], encapsulation: 2 });
+
+
+/***/ }),
+
+/***/ 8895:
+/*!****************************************************!*\
+  !*** ./src/patterns/app/routes/flyweight/index.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FlyweightComponents": () => (/* binding */ FlyweightComponents),
+/* harmony export */   "FlyweightRoutes": () => (/* binding */ FlyweightRoutes)
+/* harmony export */ });
+/* harmony import */ var _flyweight_route__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./flyweight.route */ 1772);
+
+const FlyweightComponents = [
+    _flyweight_route__WEBPACK_IMPORTED_MODULE_0__.FlyweightRoute
+];
+const FlyweightRoutes = [
+    { path: 'flyweight', component: _flyweight_route__WEBPACK_IMPORTED_MODULE_0__.FlyweightRoute }
+];
+
+
+/***/ }),
+
 /***/ 7027:
 /*!****************************************************!*\
   !*** ./src/patterns/app/routes/home/home.route.ts ***!
@@ -731,9 +919,9 @@ class HomeRoute {
     }
 }
 HomeRoute.ɵfac = function HomeRoute_Factory(t) { return new (t || HomeRoute)(); };
-HomeRoute.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: HomeRoute, selectors: [["home-route"]], decls: 2, vars: 0, consts: [["fxLayout", "row | wrap", "fxLayoutAlign", "start start", 1, "p8"], ["label", "Command", "link", "command"]], template: function HomeRoute_Template(rf, ctx) { if (rf & 1) {
+HomeRoute.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: HomeRoute, selectors: [["home-route"]], decls: 3, vars: 0, consts: [["fxLayout", "row | wrap", "fxLayoutAlign", "start start", 1, "p8"], ["label", "Command", "link", "command"], ["label", "Flyweight", "link", "flyweight"]], template: function HomeRoute_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "section", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "pattern-link", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "pattern-link", 1)(2, "pattern-link", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } }, dependencies: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__.DefaultLayoutDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__.DefaultLayoutAlignDirective, _components_core_pattern_link_component__WEBPACK_IMPORTED_MODULE_0__.PatternLinkComponent], encapsulation: 2 });
 
@@ -769,14 +957,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ 9366);
 /* harmony import */ var _command__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./command */ 9630);
+/* harmony import */ var _flyweight__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./flyweight */ 8895);
+
 
 
 const RouteComponents = [
     _home__WEBPACK_IMPORTED_MODULE_0__.HomeRoute,
-    ..._command__WEBPACK_IMPORTED_MODULE_1__.CommandComponents
+    ..._command__WEBPACK_IMPORTED_MODULE_1__.CommandComponents,
+    ..._flyweight__WEBPACK_IMPORTED_MODULE_2__.FlyweightComponents
 ];
 const Routes = [
     ..._command__WEBPACK_IMPORTED_MODULE_1__.CommandRoutes,
+    ..._flyweight__WEBPACK_IMPORTED_MODULE_2__.FlyweightRoutes,
     { path: '', component: _home__WEBPACK_IMPORTED_MODULE_0__.HomeRoute },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
