@@ -1,0 +1,29 @@
+<section fxLayout="column"
+         fxLayoutAlign="start stretch"
+         class="p8">
+    <pattern-header link="https://gameprogrammingpatterns.com/flyweight.html"
+                    header="Flyweight Pattern"></pattern-header>
+    <section fxLayout="row"
+             fxLayoutAlign="start start"
+             class="m8">
+        <section *ngFor="let column of builder.terrain"
+                 fxLayout="column"
+                 fxLayoutAlign="start start">
+            <section *ngFor="let tile of column"
+                     fxLayout="column"
+                     fxLayoutAlign="center center"
+                     [style.background-color]="tile.texture"
+                     [style.width.px]="tile.size"
+                     [style.height.px]="tile.size">
+                {{tile.movement}}
+            </section>
+        </section>
+    </section>
+    <section class="p8">
+        <button mat-stroked-button
+                color="primary"
+                (click)="refresh()">
+            Refresh
+        </button>
+    </section>
+</section>

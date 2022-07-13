@@ -5,3 +5,4 @@
 ## [Study](https://jaimestill.github.io/game-programming-patterns/)
 
 * [Command](https://jaimestill.github.io/game-programming-patterns/command)
+* [Flyweight](https://jaimestill.github.io/game-programming-patterns/flyweight)

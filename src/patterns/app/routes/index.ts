@@ -6,13 +6,20 @@ import {
     CommandRoutes
 } from './command';
 
+import {
+    FlyweightComponents,
+    FlyweightRoutes
+} from './flyweight';
+
 export const RouteComponents = [
     HomeRoute,
-    ...CommandComponents
+    ...CommandComponents,
+    ...FlyweightComponents
 ]
 
 export const Routes: Route[] = [
     ...CommandRoutes,
+    ...FlyweightRoutes,
     { path: '', component: HomeRoute },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ]
